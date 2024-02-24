@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description"> Please fill out the survey below with all required informations!</p>
+
+  <form id="survey-form">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label class="fieldset-text" for="first-name" id="name-label">First name: <input placeholder="John" type="text" id="name" required></label>
+
+      <label class="fieldset-text" for="last-name" id="last-name-label">Last name: <input placeholder="Doe" type="text" id="last-name" required></label>
+
+      <label class="fieldset-text" for="email" id="email-label">Email: <input placeholder="address@email.com" type="email" id="email" required></label>
+
+      <label class="fieldset-text" for="age" id="number-label" >Age (optional): <input type="number" id="number" min="18" max="110" placeholder="18"></label>
+  </fieldset>
+
+  <fieldset>
+    <legend> Choose your interest</legend>
+    <select id="dropdown">
+      <option value="1">Web Development </option>
+      <option value="2">Software Development</option>
+      <option value="3">Machine Learning</option>
+
+  <option value="4">UI/UX Design</option>
+
+    <option value="5">Cloud Computing</option>
+      </select>
+    </fieldset>
+
+<fieldset>
+<legend>Choose your level</legend>
+  <label class=" inline"><input type="radio" value="beginner" name="level" checked>Beginner</label>
+<label class="inline"><input value="intermidiate" name="level" type="radio">Intermidiate</label>
+<label class="inline"><input value="expert" name="level" type="radio">Expert</label>
+  </fieldset>
+<fieldset>
+  <label><legend>What should we improve?
+  <textarea id="textarea" rows="4" cols="30" placeholder="..."></textarea></label>
+  </fieldset>
+
+  <label class="center"><input type="checkbox" value="read" required> I have read the terms and conditions</label>
+    <label class="center"><input type="checkbox" value="agreed" required> I agree to the terms and conditions</label>
+
+   <input type="submit" id="submit" value="SUBMIT">
+    </form>
+  </body>
+
+</html>
